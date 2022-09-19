@@ -17,10 +17,7 @@ export default function PageUser({ data }: UserProps) {
       <span>nome: {data.name} </span>
       <br />
       <span>profile: {data.profile} </span>
-      <br />
 
-      <span>img: {data.imageProfile}</span>
-      
       <br />
 
 
