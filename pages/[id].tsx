@@ -18,8 +18,9 @@ export default function PageUser({ data }: UserProps) {
       <br />
       <span>profile: {data.profile} </span>
       <br />
-      <img src ="{data.imageProfile}" />
 
+      <span>img: {data.imageProfile}</span>
+      
       <br />
 
 
@@ -44,7 +45,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // const computers = fakeComputers;
+
   const users = await prisma.user.findMany();
 
   const paths = users.map((user) => ({
