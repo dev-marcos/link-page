@@ -20,7 +20,6 @@ export default function PageUser({ data }: UserProps) {
 
       <br />
 
-
     </div>
   );
 }
